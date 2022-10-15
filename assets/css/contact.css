@@ -1,0 +1,118 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/************
+Container
+*************/
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5%;
+    margin-top: 2%;
+}
+
+.container-contact h2 {
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-top: 5%;
+}
+
+.container-contact p {
+    font-size: 20px;
+}
+
+.openinghours-section {
+    font-size: 20px;
+}
+
+.contactus-section {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+table {
+    border-spacing: 100px 10px;
+    text-align: left;
+    margin: 0px -100px;
+}
+
+.contactus-googlemap iframe {
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .container-contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 5%;
+        margin-top: 0;
+    }
+    .container-contact img {
+        max-height: 600px;
+        width: 100%;
+        display: none;
+    }
+    .contactus-googlemap iframe {
+        min-width: 810px;
+        width: 100%;
+    }
+    .contactus-section {
+        margin-left: 25%;
+        margin-top: 1%;
+    }
+    .container-contact p {
+        font-size: 18px;
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 5%;
+        max-width: 1200px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    table {
+        line-height: 1.5;
+    }
+    .contactus-googlemap iframe {
+        margin-top: 0;
+        height: 600px;
+        width: 1200px;
+    }
+    .contactus-section {
+        margin-left: 10%;
+        margin-top: 0.5%;
+        width: 36%;
+    }
+    .contactus-section h2 {
+        margin-top: 2%;
+    }
+    .container-contact img {
+        display: none;
+    }
+    .container-contact h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-top: 5%;
+    }
+    .container-contact p,
+    .openinghours-section {
+        font-size: 20px;
+        margin-bottom: 4em;
+    }
+}

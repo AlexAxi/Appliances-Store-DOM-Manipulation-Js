@@ -1,0 +1,156 @@
+.blur {
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(29, 29, 32, 0.37);
+    backdrop-filter: blur( 7.5px);
+    -webkit-backdrop-filter: blur( 7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.reserve-btn {
+    margin: 3rem;
+    background-color: #0B877F;
+    color: white;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+}
+
+.reserve-btn:hover {
+    cursor: pointer;
+    background-color: #00869D;
+}
+
+img {
+    display: block
+}
+
+.default {
+    opacity: 0;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+}
+
+section.display {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    max-width: 1170px;
+    box-shadow: 0 8px 32px 0 rgba(29, 29, 32, 0.37);
+    backdrop-filter: blur( 2.5px);
+    -webkit-backdrop-filter: blur( 7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.reservation-field {
+    height: 72vh;
+    background-color: white;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 1170px;
+}
+
+.fa-times {
+    float: right;
+    font-size: 1.2rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.reservation-form {
+    width: 80%;
+    margin: 1rem auto;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.reservation-form-check {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+input[type=checkbox] {
+    margin-right: .5rem;
+    transform: scale(1.5)
+}
+
+#instalation,
+#pick-up {
+    margin: .5rem;
+}
+
+#reserve-btn-form {
+    background-color: #0B877F;
+    color: white;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 100%;
+    border: none;
+}
+
+#reserve-btn-form:hover {
+    cursor: pointer;
+    background-color: #00869D;
+}
+
+.mention {
+    margin: .5rem 0;
+    padding: .5rem 0;
+}
+
+.spinner {
+    pointer-events: none;
+    ;
+    color: #0B877F;
+    opacity: 1;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition-property: opacity;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fa-circle-notch {
+    font-size: 10rem;
+    margin: 1rem auto;
+    padding: 1rem auto;
+    animation: spin 1300ms infinite 100ms ease-in-out
+}
+
+.fa-check-circle {
+    font-size: 10rem;
+    margin: 2rem;
+    color: #0B877F;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg)
+    }
+}

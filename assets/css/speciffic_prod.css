@@ -1,0 +1,492 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bredcrumb_container {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.breadcrumb {
+    color: #00869D;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.desktop_prod {
+    display: none;
+}
+
+.wrapper_product_mobile {
+    min-width: 375px;
+    width: 100%;
+    font-size: clamp(1rem, 1rem+2vw, 3rem);
+    margin: 0 auto;
+}
+
+.product_title {
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.item_nr_policy {
+    align-items: center;
+    color: rgb(170, 173, 173);
+    margin: 0;
+    display: flex
+}
+
+.small_img {
+    display: none;
+}
+
+.fa-chevron-right:hover {
+    cursor: pointer;
+}
+
+.fa-chevron-left:hover {
+    cursor: pointer;
+}
+
+.arrows {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0
+}
+
+.small_img_mobile {
+    border: 1px solid #00869D;
+    padding: 0 2rem;
+    width: 6rem;
+    height: auto;
+}
+
+.big_img {
+    max-width: 100%;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+.main {
+    max-width: 75%;
+}
+
+#display_img_desktop {
+    height: 45vh;
+    margin: auto 0;
+    width: 100%;
+    margin-bottom: 6rem
+}
+
+.product_display {
+    padding: 0 1rem;
+}
+
+.product_info {
+    padding: 0 1rem;
+}
+
+.description {
+    font-size: larger;
+    max-width: 90vw;
+    margin-top: 2rem;
+}
+
+.key_features {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+h2 {
+    margin: .5rem 0
+}
+
+.price {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2.4em;
+}
+
+.reserve_btn {
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    background-color: #0B877F;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.reserve_btn:hover,
+.readmore_btn:hover {
+    background-color: #076d66;
+}
+
+#see_product {
+    font-size: 1.2rem;
+    padding: .8em 1.5em;
+    margin-bottom: 1rem
+}
+
+.spec {
+    padding: 1rem;
+}
+
+.spec h2 {
+    margin: 2.5rem 0 0 0;
+}
+
+.tabs {
+    margin: 3rem 0;
+    padding: 0;
+}
+
+.spec_btn {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: .2rem;
+    margin-right: .5rem
+}
+
+.energy_btn {
+    border-radius: 5px;
+    color: black;
+}
+
+.product_spec {
+    padding: 0;
+    list-style-type: none;
+}
+
+.spec_info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3rem 0 0;
+}
+
+.spec_info h3 {
+    margin: .3rem;
+    color: #7e7e7e;
+    font-size: 18px;
+}
+
+.similar_products {
+    padding: 1rem;
+}
+
+.similar_products_card {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 4px 6px 10px .8px rgb(161, 156, 156);
+}
+
+.similar_products_img {
+    display: flex;
+    width: 72%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.card_image {
+    margin-top: 1rem;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto
+}
+
+.energy_image {
+    width: 7vw;
+    height: auto;
+    align-self: flex-start;
+    margin: 1rem 0 0 0;
+}
+
+.similar_products_card p {
+    font-size: 1.3rem;
+}
+
+.similar_products_card hr {
+    width: 90%;
+}
+
+.similar_products_card a {
+    margin: 2rem 0 2rem 0
+}
+
+.similar_products_card h1 {
+    margin: 2rem 0;
+    padding: 1rem 0 0 0
+}
+
+.used {
+    background: #00869D;
+    color: white;
+    padding: 0 2rem;
+    text-align: center;
+    height: 30vh;
+}
+
+.wrapper_product_desktop {
+    display: none;
+}
+
+.similar_products_desktop {
+    display: none;
+}
+
+.insurance_desktop {
+    background-color: #00869D;
+    max-width: 87%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.insurance_desktop_text {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    background-color: #00869D;
+}
+
+.card_image_desktop {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.insurance_desktop .reserve_btn {
+    border: solid 1px white;
+}
+
+@media only screen and (min-width:1200px) {
+    .bredcrumb_container {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+    .breadcrumb {
+        color: #00869D;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+    .wrapper_product_mobile {
+        display: none;
+    }
+    .wrapper_product_desktop {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidebar_product {
+        width: 280px;
+    }
+    .product_show {
+        display: flex;
+        flex-direction: row;
+    }
+    .product_content {
+        max-width: 70%;
+    }
+    .product_images {
+        display: flex;
+        margin: 0 0 0 .5rem;
+        flex-direction: column;
+    }
+    .ammount_info {
+        margin-top: 1.5rem
+    }
+    .main {
+        padding: 0;
+    }
+    .big_img {
+        display: flex;
+        align-items: center;
+    }
+    .big_img i {
+        font-size: 2.5rem;
+    }
+    .big_img img {
+        padding: 0 0 0 1rem;
+        max-width: 80%;
+    }
+    .small_img {
+        display: flex;
+        list-style-type: none;
+    }
+    .small_img img {
+        max-width: 100%;
+        height: 150px;
+    }
+    .product_info {
+        margin-right: -5em;
+        width: 300px;
+        padding: 0 3rem;
+    }
+    .product_title {
+        font-size: 1.5rem;
+    }
+    .price {
+        margin-top: 2rem;
+    }
+    .item_nr_policy h5 {
+        margin: .5rem
+    }
+    .description {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+    .item_nr_policy {
+        display: flex;
+    }
+    .key_features {
+        margin: .5rem 0;
+        padding: 0;
+        padding-left: 1rem;
+    }
+    .reserve_btn {
+        text-decoration: none;
+        margin: 1rem 0 1em 0;
+    }
+    .sidebar_product img {
+        max-width: 80%;
+    }
+    .sidebar_used_products {
+        width: 100%;
+        height: 60vh;
+    }
+    .similar_products_card {
+        width: 100%;
+    }
+    .card_layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .similar_products_card_desktop {
+        text-align: center;
+        height: 100%;
+        margin: 0 1rem;
+        padding: 0 1.5rem;
+        box-shadow: 4px 6px 10px .8px rgb(161, 156, 156);
+    }
+    .similar_products_desktop {
+        display: inherit;
+        margin: 0 auto;
+        width: 1200px;
+    }
+    .similar_products_desktop h3 {
+        font-size: 1rem;
+        margin: .1rem;
+    }
+    .product_title_similar {
+        font-size: 1rem;
+    }
+    .similar_products_img_desktop {
+        margin-top: 1.5rem;
+    }
+    .similar_products_card h1 {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        padding: 1rem 0 0 0;
+        margin-left: -3em;
+    }
+    .similar_products_img {
+        display: flex;
+        justify-content: space-between;
+    }
+    .reserve_btn {
+        font-size: 1em;
+        padding: 1rem 3rem;
+    }
+    .insurance_desktop .reserve_btn {
+        border: solid 1px white;
+    }
+    .readmore_btn {
+        font-size: 1rem;
+        padding: 1rem .6rem;
+        border-radius: 5px;
+        color: white;
+        background: #0B877F;
+        text-decoration: none;
+    }
+    #reservation_big {
+        text-align: center;
+        margin-top: 5rem;
+        padding: 1.3em 3em;
+        width: 65%;
+        font-size: 1.2em;
+    }
+    #loan_btn {
+        width: 6vw;
+    }
+    #insurance_btn {
+        width: 6vw;
+    }
+    .specs_btn {
+        background-color: black;
+        color: white
+    }
+    .energy_btn {
+        background: white;
+    }
+    .card_image {
+        width: 30%;
+        margin: 0 0 0 1rem;
+    }
+    .card_image_desktop {
+        width: 100%;
+    }
+    .energy_image {
+        height: 40px;
+        margin: .1rem
+    }
+    .insurance_desktop {
+        margin: 2rem auto;
+        max-width: 1170px;
+        height: 50vh;
+        background-color: #00869D;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #repair_btn {
+        font-size: 1.5em;
+        width: 30%;
+        text-align: center;
+        margin: 0 auto
+    }
+    .insurance_desktop_text {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        color: white;
+        background-color: #00869D;
+        justify-content: center;
+        text-align: center;
+    }
+    .repair_image_prodpage {
+        width: 30rem;
+        margin-top: .2em;
+        margin-left: 1em;
+    }
+    .specs_btn {
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        padding: .5rem;
+        margin-right: .5rem
+    }
+}

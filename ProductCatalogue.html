@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Product Catalogue</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+    <!--To use icons from Fontawesome.com // fontawesome.com-->
+    <link href="assets/css/normalize.css" rel="stylesheet" />
+    <link href="assets/css/nav_footer.css" rel="stylesheet" />
+    <link href="assets/css/ProductCatalogue.css" rel="stylesheet" />
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/search.js" defer></script>
+    <script src="assets/js/CatalogueScript.js" defer></script>
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+
+    <!--NAVIGATION-->
+    <header>
+        <a class="logo-link" href="index.html">
+            <!--https://fontawesome.com/license-->
+            <img class="logo" src="assets/images/logo.png" alt="Elsalg">
+        </a>
+        <div class="search">
+            <input id="searchInput" type="text" class="searchTerm" placeholder="product name">
+            <button id="searchButton" type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <nav>
+
+            <a class="logo-link" href="#" class="hide-menu">
+                <img src="assets/images/bars-solid.png" alt="toggle menu" class="menu hide-desktop" id="menu">
+            </a>
+            <ul class="hide-mobile" id="nav">
+                <div class="used_exit">
+                    <a href="https://www.facebook.com/Elsalg-Center-Pandrup-wwwelsalg-pandrupdk-272115706231727/" target="_blank" style="text-decoration: none; color: white;">
+                        <div class="used_button">
+
+                            USED PRODUCTS
+                            <a class="social-media" href="https://www.facebook.com/Elsalg-Center-Pandrup-wwwelsalg-pandrupdk-272115706231727/" target="_blank" style="color: white; margin-left: .5em; width: 18px; height: 18px;">
+                                <i class="fab fa-facebook"></i></a>
+
+                        </div>
+                    </a>
+                    <li id="exit" class="exit-btn hide-desktop"><img src="assets/images/times-solid.svg" alt="exit">
+                    </li>
+                </div>
+                <li><a class="active" href="ProductCatalogue.html#appliances">Products</a>
+                    <hr class="line">
+                </li>
+
+                <li><a href="about.html">About</a>
+                    <hr class="line">
+                </li>
+                <li><a href="contact.html">Contact</a>
+                    <hr class="line" style="margin-bottom:2em;">
+                </li>
+
+
+                <li><a class="additional_nav" href="repair-insurance.html">INSURANCE</a></li>
+                <li><a class="additional_nav" href="repair-insurance.html#scrollto">REPAIRS</a> </li>
+                <li><a class="additional_nav" href="loans.html">LOANS</a> </li>
+
+
+            </ul>
+        </nav>
+
+    </header>
+    <dexNav class="display">
+        <a class="logo-link" href="index.html">
+            <!--https://fontawesome.com/license-->
+            <img class="logo" src="assets/images/logo.png" alt="Elsalg">
+        </a>
+
+        <ul>
+            <li><a class="additional_nav" href="repair-insurance.html">INSURANCE</a></li>
+            <li><a class="additional_nav" href="repair-insurance.html#scrollto">REPAIRS</a> </li>
+            <li><a class="additional_nav" href="loans.html">LOANS</a> </li>
+            <div>
+                <a href="https://www.facebook.com/Elsalg-Center-Pandrup-wwwelsalg-pandrupdk-272115706231727/" target="_blank" style="text-decoration: none; color: white;">
+                    <div class="used_button">
+                        USED PRODUCTS
+                        <a class="social-media" href="https://www.facebook.com/Elsalg-Center-Pandrup-wwwelsalg-pandrupdk-272115706231727/" target="_blank" style="color: white; margin-left: .5em; width: 18px; height: 18px;">
+                            <i class="fab fa-facebook"></i></a>
+                    </div>
+                </a>
+            </div>
+
+        </ul>
+    </dexNav>
+    <hr class="line">
+    <dexNav class="display">
+        <ul class="ul_sub_nav">
+            <div class="sub_nav" style="margin-left: -6%;">
+                <li><a class="active" href="ProductCatalogue.html#appliances">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a> </li>
+            </div>
+
+            <div class="search">
+                <input id="searchInputDEX" type="text" class="searchTerm searchTermDEX" placeholder="insert product name">
+
+                <button id="searchButtonDEX" type="submit" class="searchButton searchButtonDEX">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </ul>
+    </dexNav>
+
+
+
+
+
+
+
+
+
+    <!--GATALOGUE-->
+
+    <div class="catalogue-banner">
+        <h1>Product Catalogue</h1>
+    </div>
+
+
+
+
+
+    <div class="catalogue-wrapper">
+        <div class="flexContainerButtons">
+            <div>
+                <a class="buttonAppliances" href="#appliances" highlighter="false">Appliance</a>
+            </div>
+            <div>
+                <a class="buttonHouseholds" href="#households" highlighterHouse="false">Households</a>
+            </div>
+        </div>
+
+        <div class="bredcrumb_container">
+            <p class="breadcrumb">Appliances / <span style="color: black;">Fridges & Freezers</span></p>
+        </div>
+
+
+        <section class="catalogue-grid">
+            <!--Appliance- Main -Categories-->
+
+            <div class="appliances SubCategory product-grid-child">
+                <a href="#refrigerators_and_freezers">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Refrigerators & Freezers</div>
+                        <img src="assets/images/categories/refrigeratos_and_freezers/Fridge_w_Freezer.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="appliances SubCategory product-grid-child">
+                <a href="#ovens">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Ovens</div>
+                        <img src="assets/images/categories/ovens/oven.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="appliances SubCategory product-grid-child">
+                <a href="#stoves">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Stoves</div>
+                        <img src="assets/images/categories/stoves/stove.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="appliances SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Dishwashers</div>
+                        <img src="assets/images/categories/dishwashers/dishwasher.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="appliances SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Dryers</div>
+                        <img src="assets/images/categories/dryers/Dryer_01.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="appliances SubCategory product-grid-child">
+                <a href="#washing_machines">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Washing Machines</div>
+                        <img src="assets/images/categories/washing_machine/washing_machine.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <!--Households- Maincategories-->
+
+            <div class="households SubCategory product-grid-child">
+                <a href="#lighting">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Lighting</div>
+                        <img src="assets/images/categories/households/lighting/lamp.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="households SubCategory product-grid-child">
+                <a href="#security">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Security</div>
+                        <img src="assets/images/categories/households/security/security.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="households SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Microwaves</div>
+                        <img src="assets/images/categories/households/microwave/pngwing.com (29).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="households SubCategory product-grid-child">
+                <a href="#extractor_hoods">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Extractor hoods</div>
+                        <img src="assets/images/categories/households/extractors/extractor hood wall.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="households SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Induction hob</div>
+                        <img src="assets/images/categories/stoves/pngwing.com (19).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="households SubCategory product-grid-child">
+                <a href="#irons">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Irons</div>
+                        <img src="assets/images/categories/households/irons/ironing machine industrial.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="households SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Ventilators</div>
+                        <img src="assets/images/categories/households/ventilators/pngwing.com (30).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <!--Appliances- SubCategories -Washing Machiness-->
+
+            <div class="washing_machines SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Washing machines</div>
+                        <img src="assets/images/categories/washing_machine/washing_machine.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="washing_machines SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Industrial Washing machine</div>
+                        <img src="assets/images/categories/washing_machine/pngwing.com (24).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <!--Appliances- SubCategories -Ovens-->
+
+            <div class="ovens SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Built-in Ovens</div>
+                        <img src="assets/images/OvenCatalogue.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="ovens SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Industrial Ovens</div>
+                        <img src="assets/images/categories/ovens/pngwing.com (18).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <!--Appliances- SubCategories -Stoves-->
+
+            <div class="stoves SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Gas Stoves</div>
+                        <img src="assets/images/categories/stoves/pngwing.com (20).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="stoves SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Ceramic Stoves</div>
+                        <img src="assets/images/categories/stoves/pngwing.com (25).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="stoves SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Induction Stoves</div>
+                        <img src="assets/images/categories/stoves/pngwing.com (19).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <!--Appliances- SubCategories -Refrigirators and Freezers-->
+
+            <div class="refrigerators_and_freezers SubCategory product-grid-child" id="refrigeratorsCard">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Refrigerators</div>
+                        <img src="assets/images/categories/refrigeratos_and_freezers/fridge.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="refrigerators_and_freezers SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Refrigerators w/Freezers</div>
+                        <img src="assets/images/categories/refrigeratos_and_freezers/Fridge_w_Freezer.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="refrigerators_and_freezers SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Industrial Bottle fridges</div>
+                        <img src="assets/images/categories/refrigeratos_and_freezers/pngwing.com (15).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="refrigerators_and_freezers SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Industrial Freezing boxes</div>
+                        <img src="assets/images/categories/refrigeratos_and_freezers/industrial_freezing_box.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="refrigerators_and_freezers SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Small Freezers</div>
+                        <img src="assets/images/categories/refrigeratos_and_freezers/pngwing.com (10).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="refrigerators_and_freezers SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Tall Freezers</div>
+                        <img src="assets/images/categories/refrigeratos_and_freezers/pngwing.com (17).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="refrigerators_and_freezers SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Beverage Refrigerators</div>
+                        <img src="assets/images/categories/refrigeratos_and_freezers/pngwing.com (12).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <!--Households- SubCategories -Irons-->
+
+            <div class="irons SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Iron</div>
+                        <img src="assets/images/categories/households/irons/ironing machine industrial.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="irons SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Industrial Ironing machine</div>
+                        <img src="assets/images/categories/households/irons/pngwing.com (27).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="irons SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Proffessional Ironing machine</div>
+                        <img src="assets/images/categories/households/irons/pngwing.com (28).png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <!--Households- SubCategories -Security-->
+
+            <div class="security SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Alarms</div>
+                        <img src="assets/images/categories/households/security/alarms.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="security SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Monitoring systems</div>
+                        <img src="assets/images/categories/households/security/home surveilance.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+
+
+            <!--Households- SubCategories -Extractor hoods-->
+
+            <div class="extractor_hoods SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Extractor hood - Ceiling</div>
+                        <img src="assets/images/categories/households/extractors/Extractor Hood cieling.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="extractor_hoods SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Extractor hood - Wall</div>
+                        <img src="assets/images/categories/households/extractors/extractor hood wall.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="extractor_hoods SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Extractor hood w/Motor</div>
+                        <img src="assets/images/categories/households/extractors/extractor hood motor.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <!--Households- SubCategories -Lighting-->
+
+            <div class="lighting SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Bulbs</div>
+                        <img src="assets/images/categories/households/lighting/bulbs.png" alt="" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="lighting SubCategory product-grid-child">
+                <a href="specific_prod_categ.html?45">
+                    <div class="product-grid-image">
+                        <div class="product-grid-text">Lamps</div>
+                        <img src="assets/images/categories/households/lighting/lamp.png" alt="" />
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!--FOOTER-->
+    <footer>
+        <section class="grids">
+            <article class="about-us">
+                <h2 class="h2_footer">ABOUT</h2>
+                <p class="p_footer">Elsalg Pandrup has been the premiere electrical appliance store since 1994. We provide help with, reparations, installation and the purchase of new appliances.</p>
+
+                <a class="a_footer a_foot_tablet" href="about.html">Read more</a>
+            </article>
+            <article class="contact">
+                <h2 class="h2_footer">CONTACT</h2>
+
+                <p class="p_footer">Phone: <a class="a_footer" href="tel:+45 98204424">+45 98204424</a> </p>
+                <p class="p_footer">Email: <a class="a_footer" href="mailto:info@elsalg-pandrup.dk">info@elsalg-pandrup.dk</a> </p>
+                <p class="p_footer">Address: <a class="a_footer" href="https://www.google.dk/maps/place/Bredgade+13,+9490+Pandrup/@57.2237946,9.6749302,17z/data=!3m1!4b1!4m5!3m4!1s0x464926e1afe1044f:0x9c569e81ad2cad6b!8m2!3d57.2237946!4d9.6771189" target="_blank">Bredgade 13-15 - 9490
+                  Pandrup</a> </p>
+                <p class="p_footer_CVR">CVR: 25471563</p>
+            </article>
+            <article class="opening_hours">
+                <h2 class="h2_footer">OPENING HOURS</h2>
+                <p class="p_footer">Monday - Friday 10.00 - 17.30</p>
+                <p class="p_footer">Weekend - Closed</p>
+            </article>
+            <article class="connect">
+                <ul class="ul_img_footer">
+                    <li>
+                        <a class=" a_footer" href="https://www.facebook.com/Elsalg-Center-Pandrup-wwwelsalg-pandrupdk-272115706231727/" target="_blank"><i
+                          class=" img_footer_f fab fa-facebook"></i></a>
+
+                    </li>
+
+                    <li class="mail">
+                        <a class=" a_footer" href="mailto:info@elsalg-pandrup.dk" target="_blank"><i
+                          class="img_footer fas fa-envelope"></i></a>
+
+                    </li>
+                </ul>
+                <a class="a_footer_trust" href="mailto:info@elsalg-pandrup.dk" target="_blank"><img class=" img_footer_trust" src="assets/images/trustpilot-5stjerner.png" alt="mail" title="mail"></a>
+            </article>
+        </section>
+    </footer>
+
+
+
+
+    <!--Image Sources
+        
+        https://www.pngwing.com/en/free-png-yzwtd
+
+https://www.pngwing.com/en/free-png-zmeod
+
+https://www.pngwing.com/en/free-png-zutls
+
+https://www.pngwing.com/en/free-png-nival
+https://www.pngwing.com/en/free-png-zreni
+
+https://www.pngwing.com/en/free-png-tycjn/
+
+https://www.pngwing.com/en/free-png-suerg/
+
+https://www.pngwing.com/en/free-png-yjzeh
+
+https://www.pngwing.com/en/free-png-zcwtw/
+https://www.pngwing.com/en/free-png-pvukn
+
+https://pngtree.com/so/appliance'>appliance png from pngtree.com
+
+https://www.freepik.com/vectors/icons
+
+
+-->
+
+
+
+
+</body>
+
+</html>

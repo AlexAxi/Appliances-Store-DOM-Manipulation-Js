@@ -1,0 +1,118 @@
+.submit_form {
+    width: 60%;
+    color: black;
+    flex-direction: column;
+    margin: 2rem auto;
+    height: 72vh;
+    padding: 3rem 0;
+    background-color: white;
+    box-shadow: 2px 3px 18px 2px black;
+}
+
+.submit_form_exit {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: right;
+}
+
+.fa-times {
+    color: black;
+    font-size: 2rem;
+    float: right;
+}
+
+.submit_form_title {
+    width: 90%;
+    margin: .3rem auto;
+}
+
+.submit_form_fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit_form_input {
+    border: 1px solid black;
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 1rem 0;
+}
+
+.submit_form_input_check {
+    width: 90%;
+    margin: .5rem auto;
+}
+
+input[type=checkbox] {
+    margin: .5rem .5rem;
+    width: unset;
+    transform: scale(1.6)
+}
+
+.submit_form_input_check label {
+    margin-right: 1.5rem
+}
+
+.submit_form_button {
+    width: 90%;
+    margin: .5rem auto;
+    padding: 1rem;
+    color: white;
+    background-color: #0B877F;
+}
+
+.default {
+    opacity: 0;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+}
+
+.appear {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 0 8px 32px 0 rgba(29, 29, 32, 0.37);
+    backdrop-filter: blur( 2.5px);
+    -webkit-backdrop-filter: blur( 7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.done {
+    pointer-events: none;
+    ;
+    color: #0B877F;
+    opacity: 1;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition-property: opacity;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@media only screen and (max-width:1200px) {
+    .submit_form {
+        width: 90%;
+    }
+}
